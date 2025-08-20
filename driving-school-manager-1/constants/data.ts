@@ -1,14 +1,3 @@
-export interface DrivingVehicleProps {
-  vehicleName: string;
-  school: string;
-  type: string; // Car, Bike, Bus
-  rate: number;
-  pricePerHour: number;
-  currency: string;
-  favorite: boolean;
-  image: any;
-}
-
 export const SAMPLE_DATA: DrivingVehicleProps[] = [
   {
     vehicleName: "Toyota Corolla 2023",
@@ -18,7 +7,7 @@ export const SAMPLE_DATA: DrivingVehicleProps[] = [
     pricePerHour: 25,
     currency: "$",
     favorite: false,
-    image: require("@/assets/images/property1.jpeg"),
+    image: require("@/assets/images/Automatic.png"), // أو Automatic2.png حسب اختيارك
   },
   {
     vehicleName: "Honda CB500",
@@ -28,7 +17,7 @@ export const SAMPLE_DATA: DrivingVehicleProps[] = [
     pricePerHour: 20,
     currency: "$",
     favorite: true,
-    image: require("@/assets/images/property1.jpeg"),
+    image: require("@/assets/images/Driving School Motorcycle.png"),
   },
   {
     vehicleName: "Mercedes Sprinter",
@@ -38,7 +27,7 @@ export const SAMPLE_DATA: DrivingVehicleProps[] = [
     pricePerHour: 50,
     currency: "$",
     favorite: false,
-    image: require("@/assets/images/property1.jpeg"),
+    image: require("@/assets/images/Medium Driving School Bus.png"),
   },
   {
     vehicleName: "Renault Clio 2022",
@@ -48,14 +37,25 @@ export const SAMPLE_DATA: DrivingVehicleProps[] = [
     pricePerHour: 22,
     currency: "$",
     favorite: false,
-    image: require("@/assets/images/property1.jpeg"),
+    image: require("@/assets/images/Manual1.png"), // صورة السيارة المانيوال
+  },
+  {
+    vehicleName: "Iveco Minibus",
+    school: "Urban Driving Academy",
+    type: "Bus",
+    rate: 4.5,
+    pricePerHour: 40,
+    currency: "$",
+    favorite: false,
+    image: require("@/assets/images/Small Driving School Bus.png"),
   },
 ];
 
+
 export const FILTERS = [
-  { label: "Car", image: require("@/assets/images/property1.jpeg") },
-  { label: "Bike", image: require("@/assets/images/property1.jpeg") },
-  { label: "Bus", image: require("@/assets/images/property1.jpeg") },
-  { label: "Automatic", image: require("@/assets/images/property1.jpeg") },
-  { label: "Manual", image: require("@/assets/images/property1.jpeg") },
+  { label: "Automatic", image: require("@/assets/images/Automatic.png") },
+  { label: "Manual", image: require("@/assets/images/Manual1.png") },
+  { label: "Car", image: require("@/assets/images/Driving school.png") },
+  { label: "Bike", image: require("@/assets/images/Driving School Motorcycle.png") },
+  { label: "Bus", image: require("@/assets/images/Medium Driving School Bus.png") },
 ];
